@@ -156,7 +156,7 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative h-screen min-h-[600px] overflow-hidden"
+      className="relative h-screen min-h-[500px] md:min-h-[600px] overflow-hidden"
       onMouseEnter={() => setIsAutoPlay(false)}
       onMouseLeave={() => setIsAutoPlay(true)}
     >
@@ -179,11 +179,11 @@ export default function HeroSlider() {
 
           {/* Gradient Overlay */}
           <div
-            className={`absolute inset-0 bg-gradient-to-r ${slides[currentSlide].gradient}`}
+            className={`absolute inset-0 bg-gradient-to-r md:bg-gradient-to-r bg-gradient-to-b ${slides[currentSlide].gradient}`}
           ></div>
 
           {/* Decorative Elements */}
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-50"
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-50"
           ></div>
         </motion.div>
       </AnimatePresence>
@@ -214,48 +214,48 @@ export default function HeroSlider() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+              className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
             >
               {/* Left Side - Text Content */}
-              <div className="text-white space-y-6">
+              <div className="text-white space-y-4 md:space-y-6 text-center lg:text-left">
                 <motion.div
                   variants={childVariants}
                   className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full"
                 >
                   <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                  <span className="text-sm font-medium tracking-wide uppercase">
+                  <span className="text-xs md:text-sm font-medium tracking-wide uppercase">
                     {slides[currentSlide].subtitle}
                   </span>
                 </motion.div>
 
                 <motion.h1
                   variants={childVariants}
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                 >
                   {slides[currentSlide].title}
                 </motion.h1>
 
                 <motion.p
                   variants={childVariants}
-                  className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed"
+                  className="text-base md:text-lg lg:text-xl text-white/80 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                 >
                   {slides[currentSlide].description}
                 </motion.p>
 
                 <motion.div
                   variants={childVariants}
-                  className="flex flex-wrap gap-4 pt-4"
+                  className="flex flex-wrap justify-center lg:justify-start gap-3 md:gap-4 pt-4"
                 >
                   <Link
                     to={slides[currentSlide].linkPrimary}
-                    className="group inline-flex items-center gap-2 bg-white text-blue-900 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                    className="group inline-flex items-center gap-2 bg-white text-blue-900 px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 text-sm md:text-base"
                   >
                     {slides[currentSlide].ctaPrimary}
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <Link
                     to={slides[currentSlide].linkSecondary}
-                    className="inline-flex items-center gap-2 border-2 border-white/40 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-sm"
+                    className="inline-flex items-center gap-2 border-2 border-white/40 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-sm text-sm md:text-base"
                   >
                     {slides[currentSlide].ctaSecondary}
                   </Link>
@@ -264,18 +264,17 @@ export default function HeroSlider() {
                 {/* Slide Indicators */}
                 <motion.div
                   variants={childVariants}
-                  className="flex items-center gap-3 pt-8"
+                  className="flex justify-center lg:justify-start items-center gap-3 pt-6 md:pt-8"
                 >
                   {slides.map((_, index) => (
                     <motion.button
                       key={index}
                       variants={dotVariants}
                       onClick={() => goToSlide(index)}
-                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentSlide
-                          ? "bg-white w-12"
+                      className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${index === currentSlide
+                          ? "bg-white w-8 md:w-12"
                           : "bg-white/40 hover:bg-white/60"
-                      }`}
+                        }`}
                       aria-label={`Go to slide ${index + 1}`}
                     />
                   ))}

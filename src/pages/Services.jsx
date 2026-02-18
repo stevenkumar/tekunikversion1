@@ -1,6 +1,6 @@
-import ServicesHeader from "../component/services/ServicesHeader";
-import ServicesList from "../component/services/ServicesList";
-import ServicesCTA from "../component/services/ServicesCTA";
+import ServicesHeader from "../components/features/services/ServicesHeader";
+import ServicesList from "../components/features/services/ServicesList";
+import ServicesCTA from "../components/features/services/ServicesCTA";
 
 export default function Services() {
   return (

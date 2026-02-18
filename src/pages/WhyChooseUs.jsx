@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
           <h2 className="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-3">
             The Tekunik Advantage
           </h2>
-          <p className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+          <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
             Why partner with us?
           </p>
           <p className="mt-4 text-lg text-gray-600">
@@ -46,8 +46,8 @@ const WhyChooseUs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
               <div className={`w-14 h-14 ${feature.bg} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>

@@ -1,10 +1,10 @@
 import WhyChooseUs from "./WhyChooseUs";
-import HeroSlider from "../component/HeroSlider";
-import AboutPreview from "../component/home/AboutPreview";
-import ServicesPreview from "../component/home/ServicesPreview";
-import Stats from "../component/home/Stats";
-import CTA from "../component/home/CTA";
-import Btntop from "../component/Btntop";
+import HeroSlider from "../components/features/home/HeroSlider";
+import AboutPreview from "../components/features/home/AboutPreview";
+import ServicesPreview from "../components/features/home/ServicesPreview";
+import Stats from "../components/features/home/Stats";
+import CTA from "../components/features/home/CTA";
+import Btntop from "../components/layout/BtnTop";
 
 export default function Home() {
   return (
@@ -20,12 +20,13 @@ export default function Home() {
 
       {/* ================= WHY CHOOSE US ================= */}
       <WhyChooseUs />
-<Btntop/>
       {/* ================= STATS ================= */}
       <Stats />
 
       {/* ================= CTA ================= */}
       <CTA />
+      
+      <Btntop />
     </div>
   );
 }

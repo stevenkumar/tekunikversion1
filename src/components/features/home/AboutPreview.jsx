@@ -64,7 +64,7 @@ const staggerChildren = {
 export default function AboutPreview() {
     return (
         <motion.section
-            className="relative py-20 bg-white overflow-hidden"
+            className="relative py-12 md:py-20 bg-white overflow-hidden"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -72,36 +72,36 @@ export default function AboutPreview() {
         >
             {/* Background Decoration - Subtle circles for a modern look */}
             <motion.div
-                className="absolute top-0 left-0 w-64 h-64 bg-blue-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"
+                className="absolute top-0 left-0 w-48 h-48 md:w-64 md:h-64 bg-blue-50 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-50"
                 variants={backgroundCircleVariants}
                 animate="animate"
                 style={{ y: [0, -10, 0] }}
             />
             <motion.div
-                className="absolute bottom-0 right-0 w-96 h-96 bg-blue-100 rounded-full translate-x-1/3 translate-y-1/3 opacity-30"
+                className="absolute bottom-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-blue-100 rounded-full translate-x-1/3 translate-y-1/3 opacity-30"
                 variants={backgroundCircleVariants}
                 animate="animate"
                 style={{ y: [0, 15, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             />
 
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
                 {/* Left Side: Content */}
                 <motion.div
-                    className="space-y-6"
+                    className="space-y-4 md:space-y-6 text-center lg:text-left"
                     variants={leftContentVariants}
                 >
                     <motion.div
                         className="inline-block px-4 py-1.5 bg-blue-50 border border-blue-100 rounded-full"
                         variants={staggerChildren}
                     >
-                        <span className="text-blue-600 text-sm font-semibold tracking-wide uppercase">
+                        <span className="text-blue-600 text-xs md:text-sm font-semibold tracking-wide uppercase">
                             Who We Are
                         </span>
                     </motion.div>
 
                     <motion.h2
-                        className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight"
+                        className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight"
                         variants={staggerChildren}
                     >
                         Building the Digital{" "}
@@ -111,30 +111,28 @@ export default function AboutPreview() {
                     </motion.h2>
 
                     <motion.p
-                        className="text-lg text-gray-600 leading-relaxed max-w-xl"
+                        className="text-base md:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0"
                         variants={staggerChildren}
                     >
                         At <span className="font-semibold text-gray-800">Tekunik</span>,
                         Expertise: Full-spectrum digital services including graphic design, web development, and comprehensive marketing suites.
-
+                        <br /><br />
                         Approach: Merging "intelligent designs" with "engaging experiences" to solve complex digital challenges.
-
+                        <br /><br />
                         The Team: A collaborative mix of tech-driven specialists and creative fanatics focused on scaling brands to the top.
-
-                        Reach: Local roots in Mumbai with a proven track record of serving clients worldwide.
                     </motion.p>
 
                     <motion.div
-                        className="pt-4"
+                        className="pt-2 md:pt-4"
                         variants={staggerChildren}
                     >
                         <Link
                             to="/about"
-                            className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white transition-all duration-200 bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 shadow-lg shadow-blue-200"
+                            className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 text-sm md:text-base font-bold text-white transition-all duration-200 bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 shadow-lg shadow-blue-200"
                         >
                             Learn More About Us
                             <svg
-                                className="w-5 h-5 ml-2"
+                                className="w-4 h-4 md:w-5 md:h-5 ml-2"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -152,12 +150,12 @@ export default function AboutPreview() {
 
                 {/* Right Side: Image with Decorative Elements */}
                 <motion.div
-                    className="relative"
+                    className="relative mt-8 lg:mt-0"
                     variants={rightContentVariants}
                 >
                     {/* Decorative box behind image */}
                     <motion.div
-                        className="absolute -top-4 -right-4 w-full h-full border-2 border-blue-200 rounded-2xl hidden sm:block"
+                        className="absolute -top-3 -right-3 md:-top-4 md:-right-4 w-full h-full border-2 border-blue-200 rounded-2xl hidden sm:block"
                         animate={{ x: [0, -5, 0], y: [0, 5, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                     />
@@ -170,10 +168,10 @@ export default function AboutPreview() {
                         <img
                             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
                             alt="Tekunik Team Working"
-                            className="w-full h-112.5 object-cover"
+                            className="w-full h-64 sm:h-80 md:h-96 lg:h-[450px] object-cover"
                         />
                         {/* Overlay for depth */}
-                        <div className="absolute inset-0 bg-gradient from-black/40 via-transparent to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
                         {/* Floating Badge */}
                         <motion.div

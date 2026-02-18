@@ -70,22 +70,19 @@ export default function Stats() {
     <section ref={sectionRef} className="">
       <style>{customStyles}</style>
 
-     
+
 
       <div className="relative max-w-7xl mx-auto px-6 z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16 md:mb-20">
           {/* LEFT CONTENT */}
-          <div className="w-full lg:w-1/2 space-y-10 pt-8">
-            {/* <div className="uppercase tracking-widest text-sm text-cyan-400 font-semibold mb-2">
-                            Solutions in Action
-                        </div> */}
-            <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+          <div className="w-full lg:w-1/2 space-y-6 md:space-y-10 pt-4 md:pt-8 text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="text-cyan-400">Acquire a business</span> <br />
-              <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-300 to-teal-100">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-teal-100">
                 edge with TekUnik
               </span>
             </h2>
-            <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
+            <p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
               Tekunik delivers enterprise-grade identity management designed for
               the modern business. We empower organizations to enforce strict
               compliance and reduce overheads without sacrificing speed. Secure
@@ -93,124 +90,83 @@ export default function Stats() {
               market with confidence.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
-              <button className="px-8 py-3 rounded-full bg-cyan-400 text-[#051C2C] font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(34,211,238,0.6)] transition-all duration-300">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
+              <button className="px-6 md:px-8 py-2.5 md:py-3 rounded-full bg-cyan-400 text-[#051C2C] font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(34,211,238,0.6)] transition-all duration-300 text-sm md:text-base">
                 Try the solution today
               </button>
-              
             </div>
           </div>
 
           {/* RIGHT STATS GRID */}
-          <div className="w-full lg:w-1/2">
-            <div className="grid grid-cols-2 gap-6">
+          <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+            <div className="grid grid-cols-2 gap-4 md:gap-6">
               {/* Card 1 */}
-              <div className="animate-float bg-linear-to-br from-cyan-300 to-teal-400 rounded-3xl p-6 md:p-8 text-[#051C2C] shadow-lg transform translate-y-8">
-                <h3 className="text-4xl md:text-5xl font-bold mb-2">
+              <div className="animate-float bg-gradient-to-br from-cyan-300 to-teal-400 rounded-2xl md:rounded-3xl p-5 md:p-8 text-[#051C2C] shadow-lg transform translate-y-6 md:translate-y-8">
+                <h3 className="text-3xl md:text-5xl font-bold mb-1 md:mb-2 text-center md:text-left">
                   {counts[0]}%
                 </h3>
-                <p className="text-sm md:text-base font-medium opacity-80 leading-tight">
-                  Reduction in identity management costs
+                <p className="text-xs md:text-base font-medium opacity-80 leading-tight text-center md:text-left">
+                  Reduction in costs
                 </p>
               </div>
 
               {/* Card 2 */}
-              <div className="animate-float-delayed bg-linear-to-br from-emerald-300 to-teal-300 rounded-3xl p-6 md:p-8 text-[#051C2C] shadow-lg">
-                <h3 className="text-4xl md:text-5xl font-bold mb-2">
+              <div className="animate-float-delayed bg-gradient-to-br from-emerald-300 to-teal-300 rounded-2xl md:rounded-3xl p-5 md:p-8 text-[#051C2C] shadow-lg">
+                <h3 className="text-3xl md:text-5xl font-bold mb-1 md:mb-2 text-center md:text-left">
                   {counts[1]}%
                 </h3>
-                <p className="text-sm md:text-base font-medium opacity-80 leading-tight">
-                  Improvement in Employee satisfaction Indices
+                <p className="text-xs md:text-base font-medium opacity-80 leading-tight text-center md:text-left">
+                  Employee satisfaction
                 </p>
               </div>
 
               {/* Card 3 */}
-              <div className="animate-float-delayed bg-linear-to-br from-emerald-300 to-teal-300 rounded-3xl p-6 md:p-8 text-[#051C2C] shadow-lg transform translate-y-8">
-                <h3 className="text-4xl md:text-5xl font-bold mb-2">
+              <div className="animate-float-delayed bg-gradient-to-br from-emerald-300 to-teal-300 rounded-2xl md:rounded-3xl p-5 md:p-8 text-[#051C2C] shadow-lg transform translate-y-6 md:translate-y-8">
+                <h3 className="text-3xl md:text-5xl font-bold mb-1 md:mb-2 text-center md:text-left">
                   {counts[2]}%
                 </h3>
-                <p className="text-sm md:text-base font-medium opacity-80 leading-tight">
-                  Fewer security related incidences
+                <p className="text-xs md:text-base font-medium opacity-80 leading-tight text-center md:text-left">
+                  Fewer security issues
                 </p>
               </div>
 
               {/* Card 4 */}
-              <div className="animate-float bg-linear-to-br from-cyan-300 to-teal-400 rounded-3xl p-6 md:p-8 text-[#051C2C] shadow-lg">
-                <h3 className="text-4xl md:text-5xl font-bold mb-2">
+              <div className="animate-float bg-gradient-to-br from-cyan-300 to-teal-400 rounded-2xl md:rounded-3xl p-5 md:p-8 text-[#051C2C] shadow-lg">
+                <h3 className="text-3xl md:text-5xl font-bold mb-1 md:mb-2 text-center md:text-left">
                   {counts[3]}X
                 </h3>
-                <p className="text-sm md:text-base font-medium opacity-80 leading-tight">
-                  Lightning fast authentication
+                <p className="text-xs md:text-base font-medium opacity-80 leading-tight text-center md:text-left">
+                  Fast authentication
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* LOGOS SECTION (Updated for Dark Mode) */}
-        {/* <div className="p-7">
-                    <p className="text-center  mb-8 text-2xl text-bold uppercase tracking-wide ">Trusted by companies we’ve worked with</p>
-                    
-                    <div className="w-full inline-flex flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-200px),transparent_10%)]">
-                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-                            {[
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg", alt: "Microsoft" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg", alt: "Amazon" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg", alt: "Google" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg", alt: "Slack" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg", alt: "Netflix" },
-                            ].map((logo, index) => (
-                                <li key={index}>
-                                    <img
-                                        src={logo.src}
-                                        alt={logo.alt}
-                                        className="h-8  opacity-50 hover:opacity-100 transition duration-300"
-                                    />
-                                </li>
-                            ))}
-                        </ul>
-                        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-                            {[
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg", alt: "Microsoft" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg", alt: "Amazon" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg", alt: "Google" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg", alt: "Slack" },
-                                { src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg", alt: "Netflix" },
-                            ].map((logo, index) => (
-                                <li key={index}>
-                                    <img
-                                        src={logo.src}
-                                        alt={logo.alt}
-                                        className="h-8 brightness-0 invert opacity-50 hover:opacity-100 transition duration-300"
-                                    />
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </div> */}
-        <section className="bg-white lg:pb-10  w-full">
+        {/* LOGOS SECTION */}
+        <section className="bg-white pb-6 md:pb-10 w-full">
           <div className="container mx-auto px-4">
             {/* ---------- Heading ---------- */}
-            <div className="text-center mb-12 lg:mb-8">
-              <h2 className="text-3xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500 pb-2">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500 pb-2">
                 Trusted by Industry Leaders
               </h2>
             </div>
 
             {/* ---------- Desktop Marquee ---------- */}
-            <div className="relative  w-full bg-white hidden lg:flex flex-col gap-6 mx-auto">
+            <div className="relative w-full bg-white hidden lg:flex flex-col gap-6 mx-auto">
               <div className="flex items-center justify-between h-fit w-full">
                 <Marquee direction="left" speed={80} gradient={false}>
                   <div className="flex h-fit">
                     {logos.map((src, i) => (
                       <div
                         key={`desk1-${i}`}
-                        className="h-[70px] w-[180px] flex items-center justify-center  mx-0"
+                        className="h-[70px] w-[180px] flex items-center justify-center mx-4"
                       >
                         <img
                           src={src}
                           alt="logo"
-                          className="max-w-[60%] max-h-[60%]"
+                          className="max-w-[70%] max-h-[70%] opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
                         />
                       </div>
                     ))}
@@ -227,9 +183,9 @@ export default function Stats() {
                     {logos.map((src, i) => (
                       <div
                         key={`mob1-${i}`}
-                        className="h-[70px] w-[140px] flex items-center justify-center border-[0.5px] border-[#D8D8D8]"
+                        className="h-[60px] w-[120px] flex items-center justify-center mx-2"
                       >
-                        <img className="w-[70%]" src={src} alt="logo" />
+                        <img className="max-w-[80%] max-h-[80%] opacity-70 grayscale" src={src} alt="logo" />
                       </div>
                     ))}
                   </div>

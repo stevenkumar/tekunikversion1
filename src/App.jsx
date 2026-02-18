@@ -1,19 +1,19 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./component/Navbar";
-import ScrollToTop from "./component/ScrollToTop";
+import Navbar from "./components/layout/Navbar";
+import ScrollToTop from "./components/layout/ScrollToTop";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Contact from "./pages/ContactPage";
-import Footer from "./component/Footer";
-import HeroSection from "./pages/HeroSection";
+// import Contact from "./pages/ContactPage";
+import Contact from "./pages/ContactPageV2";
+import Footer from "./components/layout/Footer";
 import WebQuestionnaire from "./pages/WebQuestionnaire";
 import MobileQuestionnarie from "./pages/MobileQuestionnarie";
-import BtnTop from "./component/Btntop";
-import PencilCursor from "./component/mousemovement/PencilCursor";
-import AdvancedServices from "./component/services/AdvancedServices";
-import ServicesShowcase from "./component/services/ServicesShowcase";
+import BtnTop from "./components/layout/BtnTop";
+import PencilCursor from "./components/animations/PencilCursor";
+import AdvancedServices from "./components/features/services/AdvancedServices";
+import ServicesShowcase from "./components/features/services/ServicesShowcase";
 
 
 
@@ -23,6 +23,7 @@ function App() {
     <>
       <Navbar />
       <ScrollToTop />
+      {/* <CircleHover /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />

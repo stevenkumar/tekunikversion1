@@ -1,8 +1,8 @@
-import AboutHeader from "../component/about/AboutHeader";
-import WhoWeAre from "../component/about/WhoWeAre";
-import OurValues from "../component/about/OurValues";
-import OurProcess from "../component/about/OurProcess";
-import TechStack from "../component/about/TechStack";
+import AboutHeader from "../components/features/about/AboutHeader";
+import WhoWeAre from "../components/features/about/WhoWeAre";
+import OurValues from "../components/features/about/OurValues";
+import OurProcess from "../components/features/about/OurProcess";
+import TechStack from "../components/features/about/TechStack";
 
 export default function About() {
   return (
