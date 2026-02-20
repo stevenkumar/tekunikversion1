@@ -14,6 +14,8 @@ import BtnTop from "./components/layout/BtnTop";
 import PencilCursor from "./components/animations/PencilCursor";
 import AdvancedServices from "./components/features/services/AdvancedServices";
 import ServicesShowcase from "./components/features/services/ServicesShowcase";
+import MobileAppProject from "./pages/MobileAppProject";
+import AppProject from "./pages/AppProject";
 
 
 
@@ -34,6 +36,10 @@ function App() {
         <Route path="/mobilequestionnarie" element={<MobileQuestionnarie />} />
         <Route path="/AdvancedServices" element={<AdvancedServices />} />
         <Route path="/ServicesShowcase" element={<ServicesShowcase />} />
+        <Route path="/MobileAppProject" element={<MobileAppProject />} />
+        
+        <Route path="/AppProject" element={<AppProject />} />
+        
         {/* <Route path="/herosection" element={<HeroSection />} /> */}
 
       </Routes>

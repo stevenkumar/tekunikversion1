@@ -156,7 +156,7 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative h-screen min-h-[500px] md:min-h-[600px] overflow-hidden"
+      className="relative h-dvh min-h-[500px] md:min-h-[600px] overflow-hidden "
       onMouseEnter={() => setIsAutoPlay(false)}
       onMouseLeave={() => setIsAutoPlay(true)}
     >
@@ -290,7 +290,7 @@ export default function HeroSlider() {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:scale-110 transition-all duration-300"
+          className="absolute left-6 lg:top-1/2  bottom-0 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:scale-110 transition-all duration-300"
           aria-label="Previous slide"
         >
           <svg
@@ -310,7 +310,7 @@ export default function HeroSlider() {
 
         <button
           onClick={nextSlide}
-          className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:scale-110 transition-all duration-300"
+          className="absolute right-6 lg:top-1/2  bottom-0 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:scale-110 transition-all duration-300"
           aria-label="Next slide"
         >
           <svg

@@ -49,7 +49,7 @@ const ContactPageV2 = () => {
     };
 
     return (
-        <div className="min-h-screen bg-[#F0F9FA] font-sans text-slate-700 p-2">
+        <div className="min-h-screen bg-[#F0F9FA] font-sans text-slate-700 p-2 mt-8 md:p-6 lg:p-12">
             {/* Hero Header */}
             <div className="text-center mt-16 mb-12 px-4">
                 <h1 className="text-4xl font-bold text-slate-800 mb-4">Get In Touch</h1>
@@ -87,7 +87,7 @@ const ContactPageV2 = () => {
                             <p className="text-sm">New York, USA</p>
                         </div>
                         <div>
-                            <ul className="flex gap-4 mt-20">
+                            <ul className="flex gap-4 mt-10">
                                 <li>
                                     <a
                                         href="https://www.facebook.com/tekunik"

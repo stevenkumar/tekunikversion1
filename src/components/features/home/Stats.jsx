@@ -185,7 +185,7 @@ export default function Stats() {
                         key={`mob1-${i}`}
                         className="h-[60px] w-[120px] flex items-center justify-center mx-2"
                       >
-                        <img className="max-w-[80%] max-h-[80%] opacity-70 grayscale" src={src} alt="logo" />
+                        <img className="max-w-[80%] max-h-[80%] " src={src} alt="logo" />
                       </div>
                     ))}
                   </div>
@@ -196,7 +196,7 @@ export default function Stats() {
         </section>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+      {/* <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg
           className="relative block w-[calc(100%+1.3px)] h-50px md:h-100px"
           data-name="Layer 1"
@@ -210,86 +210,7 @@ export default function Stats() {
             fillOpacity="1"
           ></path>
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 }
-
-// import React, { useState } from "react";
-// import Marquee from "react-fast-marquee";
-// import { motion, AnimatePresence } from "framer-motion";
-
-// yaha se start krna hai
-// import React from "react";
-// import Marquee from "react-fast-marquee";
-
-// // Placeholder data
-// const logos = [
-//   "/company/comp_logo.svg",
-//   "/company/comp_logo2.svg",
-//   "/company/comp_logo3.svg",
-//   "/company/comp_logo4.svg",
-//   "/company/comp_logo5.svg",
-//   "/company/comp_logo.svg",
-//   "/company/comp_logo2.svg",
-//   "/company/comp_logo3.svg",
-//   "/company/comp_logo4.svg",
-//   "/company/comp_logo5.svg",
-// ];
-
-// const Stats = () => {
-//   return (
-//     <section className="bg-white lg:py-24 py-12 overflow-hidden w-full">
-//       <div className="container mx-auto px-4">
-//         {/* ---------- Heading ---------- */}
-//         <div className="text-center mb-12 lg:mb-16">
-//           <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500 pb-2">
-//             Trusted by Industry Leaders
-//           </h2>
-//         </div>
-
-//         {/* ---------- Desktop Marquee ---------- */}
-//         <div className="relative overflow-hidden w-full bg-white hidden lg:flex flex-col gap-6 mx-auto">
-//           <div className="flex items-center justify-between h-fit w-full">
-//             <Marquee direction="left" speed={80} gradient={false}>
-//               <div className="flex h-fit">
-//                 {logos.map((src, i) => (
-//                   <div
-//                     key={`desk1-${i}`}
-//                     className="h-[140px] w-[280px] flex items-center justify-center border-[0.5px] border-[#D8D8D8] mx-0"
-//                   >
-//                     <img
-//                       src={src}
-//                       alt="logo"
-//                       className="max-w-[80%] max-h-[80%]"
-//                     />
-//                   </div>
-//                 ))}
-//               </div>
-//             </Marquee>
-//           </div>
-//         </div>
-
-//         {/* ---------- Mobile Marquee ---------- */}
-//         <div className="relative overflow-hidden w-full bg-white flex lg:hidden flex-col gap-4 mx-auto">
-//           <div className="flex items-center justify-between h-fit">
-//             <Marquee direction="left" speed={60} gradient={false}>
-//               <div className="flex h-fit">
-//                 {logos.map((src, i) => (
-//                   <div
-//                     key={`mob1-${i}`}
-//                     className="h-[70px] w-[140px] flex items-center justify-center border-[0.5px] border-[#D8D8D8]"
-//                   >
-//                     <img className="w-[70%]" src={src} alt="logo" />
-//                   </div>
-//                 ))}
-//               </div>
-//             </Marquee>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Stats;

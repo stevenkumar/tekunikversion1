@@ -56,10 +56,10 @@ export default function WebQuestionnaire() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto py-6 md:py-12 px-4 sm:px-6">
-      <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-8 text-center text-slate-800">Website Questionnaire</h2>
-      <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-slate-100">
-        <h1 className="text-2xl md:text-4xl font-black text-blue-600 text-center uppercase tracking-tight">WEB PROJECT</h1>
+    <div className="max-w-3xl mx-auto py-6 md:py-12 px-4 sm:px-6 mt-8">
+      {/* <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-8 text-center text-slate-800">Website Questionnaire</h2> */}
+      <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 mt-8 md:p-10 rounded-2xl shadow-sm border border-slate-100">
+        <h1 className="text-xl md:text-4xl font-bold mb-4 md:mb-8 text-blue-600 text-center uppercase tracking-tight">WEB PROJECT</h1>
         {/* Basic Info */}
         <div>
           <label className="block text-sm font-medium mb-1">Your Name *</label>

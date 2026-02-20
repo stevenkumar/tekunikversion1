@@ -28,9 +28,9 @@ const legalLinks = [
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 ">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
@@ -159,7 +159,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="mt-12 border-t border-slate-800" />
+        <div className="mt-10 border-t border-slate-800" />
 
         {/* Bottom Footer */}
         <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
@@ -167,7 +167,7 @@ export default function Footer() {
             © {new Date().getFullYear()} TekUnik. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-wrap items-center lg:gap-6 gap-4 grid-cols-3 md:grid-cols-3">
             {legalLinks.map((link) => (
               <a
                 key={link.label}

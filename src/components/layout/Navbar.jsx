@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { FaBorderAll } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom"; // ✅ useLocation import kiya
 
 export default function Navbar() {
@@ -47,9 +48,9 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8 font-medium text-black">
+          <div className="hidden md:flex items-center space-x-8 font-medium text-black ">
             {/* ✅ Har Link pe getLinkClass function use kiya */}
-            <Link to="/" className={getLinkClass("/")}>
+            <Link to="/"  className={getLinkClass("/")}>
               Home
             </Link>
             <Link to="/about" className={getLinkClass("/about")}>
@@ -80,10 +81,10 @@ export default function Navbar() {
               {open && (
                 <div className="absolute right-0 mt-2 w-44 rounded border bg-white shadow-md overflow-hidden">
                   <Link
-                    to="/webquestionnarie"
+                    to="/AppProject"
                     onClick={() => setOpen(false)}
                     className={`block px-4 py-2 hover:bg-gray-100 ${
-                      location.pathname === "/webquestionnarie"
+                      location.pathname === "/AppProject"
                         ? "text-blue-600 bg-blue-50"
                         : "text-black"
                     }`}
@@ -92,10 +93,10 @@ export default function Navbar() {
                   </Link>
 
                   <Link
-                    to="/mobilequestionnarie"
+                    to="/MobileAppProject"
                     onClick={() => setOpen(false)}
                     className={`block px-4 py-2 hover:bg-gray-100 ${
-                      location.pathname === "/mobilequestionnarie"
+                      location.pathname === "/MobileAppProject"
                         ? "text-blue-600 bg-blue-50"
                         : "text-black"
                     }`}
