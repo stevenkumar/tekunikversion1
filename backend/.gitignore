@@ -1,0 +1,87 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+target/
+*.log
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Build directories
+build/
+dist/
+out/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Compiled files
+*.com
+*.exe
+*.dll
+*.o
+*.a
+
+# Databases
+*.sql
+*.sqlite
+*.db
+
+# Secrets and credentials
+*.key
+*.pem
+secrets.yml
+credentials.json
