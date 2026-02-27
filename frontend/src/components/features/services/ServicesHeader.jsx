@@ -14,7 +14,9 @@ export default function ServicesHeader() {
                 Our Services
             </h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
-                We provide complete digital solutions to help your business grow and succeed in the digital landscape.
+                We take pride in delivering Intelligent Designs and Engaging Experiences for clients all over the World. We thrive on problem solving and working with clients to seek out the best possible digital solution.
+                We provide complete digital solutions to help your business grow and succeed in the digital landscape.We take pride in delivering Intelligent Designs and Engaging Experiences for clients all over the World. We thrive on problem solving and working with clients to seek out the best possible digital solution.
+                
             </p>
         </motion.div>
     );

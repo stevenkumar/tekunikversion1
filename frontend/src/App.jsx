@@ -11,7 +11,7 @@ import Footer from "./components/layout/Footer";
 import WebQuestionnaire from "./pages/WebQuestionnaire";
 import MobileQuestionnarie from "./pages/MobileQuestionnarie";
 import BtnTop from "./components/layout/BtnTop";
-import PencilCursor from "./components/animations/PencilCursor";
+// import PencilCursor from "./components/animations/PencilCursor";
 import AdvancedServices from "./components/features/services/AdvancedServices";
 import ServicesShowcase from "./components/features/services/ServicesShowcase";
 import MobileAppProject from "./pages/MobileAppProject";
@@ -42,7 +42,7 @@ function App() {
         {/* <Route path="/herosection" element={<HeroSection />} /> */}
 
       </Routes>
-      <PencilCursor />
+      {/* <PencilCursor /> */}
       <BtnTop />
 
       <Footer />

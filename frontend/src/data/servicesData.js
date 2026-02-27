@@ -12,7 +12,7 @@ export const services = [
     {
         id: "web-dev",
         title: "Web Development",
-        description: "We build fast, secure, and scalable websites using modern technologies.",
+        description: "We build fast, secure, and scalable websites using modern technologies. Our web wizard’s aka web developers breathe, eat, drink and sleep web development have an expertise in developing a blueprint of your business; we have the experience of working with small content only sites to large-scale multi-layered e-commerce sites. We are thrill seekers for us no brief is intricate as we always come up with a solution to leave a lasting impact on your target audience.",
         icon: Globe,
         color: "text-brand-green",
         bg: "bg-brand-green/10",
@@ -105,4 +105,36 @@ export const services = [
             "Disaster recovery"
         ]
     },
-];
+    {
+        id: "digital-marketing",
+        title: "Digital Marketing",
+        description: "Improve your website visibility and ranking with proven SEO strategies.",
+        icon: Search,
+        color: "text-brand-cyan",
+        bg: "bg-brand-cyan/10",
+        gradient: "from-brand-cyan to-brand-green",
+        details: [
+            "On-page optimization",
+            "Technical SEO & Site Speed",
+            "Backlink strategies",
+            "Content strategy",
+            "Monthly performance reporting"
+        ]
+    },
+    {
+        id: "Brand",
+        title: "Brand Building",
+        description: "Improve your website visibility and ranking with proven SEO strategies.",
+        icon: Search,
+        color: "text-brand-cyan",
+        bg: "bg-brand-cyan/10",
+        gradient: "from-brand-cyan to-brand-green",
+        details: [
+            "On-page optimization",
+            "Technical SEO & Site Speed",
+            "Backlink strategies",
+            "Content strategy",
+            "Monthly performance reporting"
+        ]
+    },
+]
