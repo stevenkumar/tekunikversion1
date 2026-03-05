@@ -160,8 +160,8 @@ export default function Navbar() {
 
           <div className="pt-2 border-t">
             <Link
-              to="/webquestionnarie"
-              className={`block py-2 ${location.pathname === "/webquestionnarie"
+              to="/WebAppProject"
+              className={`block py-2 ${location.pathname === "/WebAppProject"
                   ? "text-brand-green"
                   : "text-black hover:text-brand-cyan"
                 }`}
@@ -171,8 +171,8 @@ export default function Navbar() {
             </Link>
 
             <Link
-              to="/mobilequestionnarie"
-              className={`block py-2 ${location.pathname === "/mobilequestionnarie"
+              to="/mobileAppProject"
+              className={`block py-2 ${location.pathname === "/mobileAppProject"
                   ? "text-brand-green"
                   : "text-black hover:text-brand-cyan"
                 }`}
