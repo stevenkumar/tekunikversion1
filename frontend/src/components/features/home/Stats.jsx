@@ -144,16 +144,14 @@ export default function Stats() {
         </div>
 
         {/* LOGOS SECTION */}
-        <section className="bg-white pb-6 md:pb-10 w-full">
+        {/* <section className="bg-white pb-6 md:pb-10 w-full">
           <div className="container mx-auto px-4">
-            {/* ---------- Heading ---------- */}
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-brand-green to-brand-cyan pb-2">
                 Trusted by Industry Leaders
               </h2>
             </div>
 
-            {/* ---------- Desktop Marquee ---------- */}
             <div className="relative w-full bg-white hidden lg:flex flex-col gap-6 mx-auto">
               <div className="flex items-center justify-between h-fit w-full">
                 <Marquee direction="left" speed={80} gradient={false}>
@@ -175,7 +173,6 @@ export default function Stats() {
               </div>
             </div>
 
-            {/* ---------- Mobile Marquee ---------- */}
             <div className="relative overflow-hidden w-full bg-white flex lg:hidden flex-col gap-4 mx-auto">
               <div className="flex items-center justify-between h-fit">
                 <Marquee direction="left" speed={60} gradient={false}>
@@ -193,7 +190,7 @@ export default function Stats() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
 
       {/* <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">

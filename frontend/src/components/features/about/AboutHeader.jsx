@@ -9,7 +9,7 @@ export default function AboutHeader() {
             {/* H1: Animated Shimmer Gradient */}
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pb-1">
                 <span
-                    className="bg-clip-text text-transparent bg-[linear-gradient(to_right,var(--color-gray-900),var(--color-gray-900),var(--color-brand-green),var(--color-gray-900),var(--color-gray-900))] bg-size-[200%_auto] animate-shine"
+                    className="bg-clip-text text-transparent bg-[linear-gradient(to_right,var(--color-gray-900),var(--color-gray-900),var(--color-brand-green),var(--color-gray-900),var(--color-gray-900))] bg-size-[200%_auto] animate-shine "
                 >
                     We create digital solutions that feel premium and perform fast.
                 </span>

@@ -12,7 +12,7 @@ const transition = {
     mass: 1
 };
 
-export default function ServicesPreview() {
+export default function ServicesPreviews() {
     const [selectedId, setSelectedId] = useState(null);
     const selectedService = services.find((s) => s.id === selectedId);
 

@@ -6,6 +6,8 @@ import Stats from "../components/features/home/Stats";
 import CTA from "../components/features/home/CTA";
 import Btntop from "../components/layout/BtnTop";
 import usePageMeta from "../hooks/usePageMeta";
+import ClientLogos from "../components/features/home/ClientLogo";
+
 
 export default function Home() {
   usePageMeta('', 'Tekunik offers complete digital solutions including web development, mobile apps, UI/UX design, SEO optimization, and e-commerce solutions.');
@@ -24,6 +26,8 @@ export default function Home() {
       <WhyChooseUs />
       {/* ================= STATS ================= */}
       <Stats />
+      {/* ================= CLIENT LOGOS ================= */}
+      <ClientLogos />
 
       {/* ================= CTA ================= */}
       <CTA />

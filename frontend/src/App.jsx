@@ -16,6 +16,9 @@ import AdvancedServices from "./components/features/services/AdvancedServices";
 import ServicesShowcase from "./components/features/services/ServicesShowcase";
 import MobileAppProject from "./pages/MobileAppProject";
 import  WebAppProject from "./pages/WebAppProject";
+import ServicesLists from "./components/features/services/ServicesLists";
+import ServicesPreviews from "./components/features/home/ServicesPreviews";``
+
 
 
 
@@ -38,6 +41,8 @@ function App() {
         <Route path="/ServicesShowcase" element={<ServicesShowcase />} />
         <Route path="/MobileAppProject" element={<MobileAppProject />} />
         <Route path="/WebAppProject" element={<WebAppProject />} />
+        <Route path="/ServicesLists" element={<ServicesLists />} />
+        <Route path="/ServicesPreviews" element={<ServicesPreviews />} />
         
         {/* <Route path="/herosection" element={<HeroSection />} /> */}
 
