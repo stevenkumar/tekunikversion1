@@ -2,6 +2,8 @@ import ServicesHeader from "../components/features/services/ServicesHeader";
 import ServicesList from "../components/features/services/ServicesList";
 import ServicesCTA from "../components/features/services/ServicesCTA";
 import usePageMeta from "../hooks/usePageMeta";
+import ServicesSection from "../components/features/services/ServicesSection";
+// import ServicesShowcase from "../components/features/services/ServicesShowcase";
 
 export default function Services() {
   usePageMeta('Our Services', 'Explore Tekunik services — web development, mobile apps, UI/UX design, SEO optimization, e-commerce solutions, and ongoing maintenance.');
@@ -17,6 +19,8 @@ export default function Services() {
 
         {/* CTA Section */}
         <ServicesCTA />
+       
+       <ServicesSection />
 
       </div>
     </section>

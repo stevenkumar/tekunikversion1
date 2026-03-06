@@ -108,7 +108,7 @@ export const services = [
     {
         id: "digital-marketing",
         title: "Digital Marketing",
-        description: "Improve your website visibility and ranking with proven SEO strategies.",
+        description: "Improve your website visibility and ranking with proven SEO strategies. ",
         icon: Search,
         color: "text-brand-cyan",
         bg: "bg-brand-cyan/10",
@@ -124,7 +124,23 @@ export const services = [
     {
         id: "Brand",
         title: "Brand Building",
-        description: "Improve your website visibility and ranking with proven SEO strategies.",
+        description: "Improve your website visibility and ranking with proven SEO strategies. The Best Brands know what to say, when to say and how to say - they find a voice for their brand and establish an identity. As we build your brand, we explore how your audience will interact with your Organization across all channels like- Your website, social media & Print. Our endeavor will make sure your brand will spread the right message via all mediums. We elevate your Brand by creating strategies that will perfectly communicate your message to your target audience. Our brand Building strategists will give you an authentic voice that speaks for your today and evolves with your future. So, come let's build your brand together.",
+        icon: Search,
+        color: "text-brand-cyan",
+        bg: "bg-brand-cyan/10",
+        gradient: "from-brand-cyan to-brand-green",
+        details: [
+            "On-page optimization",
+            "Technical SEO & Site Speed",
+            "Backlink strategies",
+            "Content strategy",
+            "Monthly performance reporting"
+        ]
+    },
+    {
+        id: "content",
+        title: "Content Writing",
+        description: "Today the one answer to all your marketing goals is “Content”.  Content creates brand loyalists by connecting to your brand's target audience. Content that makes them laugh, cry, motivated, think or question is what makes your target audience a “brand loyalist”  For this to happen, we need to stop indulging in self-promotion. Instead, we have to look at it from your users’ perspective. What would the user find interesting? When would he like it to be delivered? For that, we need to first gather in-depth insights about the user. Only then will we be able to provide information that is relevant and cut out to add value to their lives – without asking for anything in return. Our team of content writers has all the skills you need to create contents that will get you noticed by the audience that matter to you. So, get in touch with us to get noticed. ",
         icon: Search,
         color: "text-brand-cyan",
         bg: "bg-brand-cyan/10",
