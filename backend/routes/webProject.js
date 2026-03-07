@@ -1,6 +1,7 @@
 const express = require('express');
 const WebProject = require('../models/WebProject');
 const sendEmail = require('../utils/sendEmail');
+const syncToGoogleSheets = require('../utils/googleSheets');
 
 const router = express.Router();
 
@@ -20,6 +21,9 @@ router.post('/', async (req, res) => {
             req.body,
             'Web Project'
         );
+
+        // Sync to Google Sheets
+        await syncToGoogleSheets('Web Project', req.body);
 
         res.status(201).json({ message: 'Web project submitted successfully', data: project });
     } catch (error) {

@@ -1,6 +1,7 @@
 const express = require('express');
 const Contact = require('../models/Contact');
 const sendEmail = require('../utils/sendEmail');
+const syncToGoogleSheets = require('../utils/googleSheets');
 
 const router = express.Router();
 
@@ -20,6 +21,9 @@ router.post('/', async (req, res) => {
             { name, email, subject, message },
             'Contact'
         );
+
+        // Sync to Google Sheets
+        await syncToGoogleSheets('Contact', { name, email, subject, message });
 
         res.status(201).json({ message: 'Message sent successfully', data: contact });
     } catch (error) {

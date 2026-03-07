@@ -1,6 +1,7 @@
 const express = require('express');
 const MobileProject = require('../models/MobileProject');
 const sendEmail = require('../utils/sendEmail');
+const syncToGoogleSheets = require('../utils/googleSheets');
 
 const router = express.Router();
 
@@ -20,6 +21,9 @@ router.post('/', async (req, res) => {
             req.body,
             'Mobile App Project'
         );
+
+        // Sync to Google Sheets
+        await syncToGoogleSheets('Mobile Project', req.body);
 
         res.status(201).json({ message: 'Mobile project submitted successfully', data: project });
     } catch (error) {
