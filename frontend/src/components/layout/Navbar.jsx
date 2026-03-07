@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
 
             <img
               src="https://tekunik.in/wp-content/uploads/2019/11/tekunik-logo-DARK.png.webp"
@@ -45,13 +45,13 @@ export default function Navbar() {
               className="h-8 w-auto"
             />
 
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 font-medium text-black ">
             {/* ✅ Har Link pe getLinkClass function use kiya */}
-            <Link to="/" className={getLinkClass("/")}>
-              Home
+            <Link to="/template" className={getLinkClass("/template")}>
+              Templates
             </Link>
             <Link to="/about" className={getLinkClass("/about")}>
               About
@@ -84,8 +84,8 @@ export default function Navbar() {
                     to="/WebAppProject"
                     onClick={() => setOpen(false)}
                     className={`block px-4 py-2 hover:bg-gray-100 ${location.pathname === "/WebAppProject"
-                        ? "text-brand-green bg-brand-green/10"
-                        : "text-black"
+                      ? "text-brand-green bg-brand-green/10"
+                      : "text-black"
                       }`}
                   >
                     Web Application
@@ -95,8 +95,8 @@ export default function Navbar() {
                     to="/MobileAppProject"
                     onClick={() => setOpen(false)}
                     className={`block px-4 py-2 hover:bg-gray-100 ${location.pathname === "/MobileAppProject"
-                        ? "text-brand-green bg-brand-green/10"
-                        : "text-black"
+                      ? "text-brand-green bg-brand-green/10"
+                      : "text-black"
                       }`}
                   >
                     App Application
@@ -137,6 +137,13 @@ export default function Navbar() {
             Home
           </Link>
           <Link
+            to="/template"
+            className={getLinkClass("/template")}
+            onClick={() => setMobileOpen(false)}
+          >
+            Templates
+          </Link>
+          <Link
             to="/about"
             className={getLinkClass("/about")}
             onClick={() => setMobileOpen(false)}
@@ -162,8 +169,8 @@ export default function Navbar() {
             <Link
               to="/WebAppProject"
               className={`block py-2 ${location.pathname === "/WebAppProject"
-                  ? "text-brand-green"
-                  : "text-black hover:text-brand-cyan"
+                ? "text-brand-green"
+                : "text-black hover:text-brand-cyan"
                 }`}
               onClick={() => setMobileOpen(false)}
             >
@@ -173,8 +180,8 @@ export default function Navbar() {
             <Link
               to="/mobileAppProject"
               className={`block py-2 ${location.pathname === "/mobileAppProject"
-                  ? "text-brand-green"
-                  : "text-black hover:text-brand-cyan"
+                ? "text-brand-green"
+                : "text-black hover:text-brand-cyan"
                 }`}
               onClick={() => setMobileOpen(false)}
             >
