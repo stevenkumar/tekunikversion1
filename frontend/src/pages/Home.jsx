@@ -1,4 +1,4 @@
-import WhyChooseUs from "./WhyChooseUs";
+import WhyChooseUs from "../components/features/home/WhyChooseUs";
 import HeroSlider from "../components/features/home/HeroSlider";
 import AboutPreview from "../components/features/home/AboutPreview";
 import ServicesPreview from "../components/features/home/ServicesPreview";

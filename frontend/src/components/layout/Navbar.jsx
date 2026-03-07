@@ -88,7 +88,7 @@ export default function Navbar() {
                         : "text-black"
                       }`}
                   >
-                    Web Project
+                    Web Application
                   </Link>
 
                   <Link
@@ -99,7 +99,7 @@ export default function Navbar() {
                         : "text-black"
                       }`}
                   >
-                    App Project
+                    App Application
                   </Link>
                 </div>
               )}

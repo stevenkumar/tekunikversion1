@@ -54,7 +54,13 @@ const ContactPageV2 = () => {
         <div className="min-h-screen bg-brand-cyan/5 font-sans text-slate-700 p-2 mt-8 md:p-6 lg:p-12">
             {/* Hero Header */}
             <div className="text-center mt-16 mb-12 px-4">
-                <h1 className="text-4xl font-bold text-slate-800 mb-4">Get In Touch</h1>
+                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pb-1">
+                <span
+                    className="bg-clip-text text-transparent bg-[linear-gradient(to_right,var(--color-gray-900),var(--color-gray-900),var(--color-brand-green),var(--color-gray-900),var(--color-gray-900))] bg-size-[200%_auto] animate-shine "
+                >
+                    Get In Touch
+                </span>
+            </h1>
                 <p className="max-w-2xl mx-auto text-slate-500 leading-relaxed">
                     We'll create high-quality linkable content and build at least 40
                     high-authority links to each asset, paving the way for you to grow

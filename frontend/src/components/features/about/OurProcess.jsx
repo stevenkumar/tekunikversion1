@@ -41,13 +41,13 @@ const OurProcess = () => {
     <div className="min-h-screen bg-slate-50 py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold text-slate-900 mb-4"
-          >
-            Our Process: From Vision to <span className="text-brand-green">Reality</span>
-          </motion.h2>
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pb-1">
+                <span
+                    className="bg-clip-text text-transparent bg-[linear-gradient(to_right,var(--color-gray-900),var(--color-gray-900),var(--color-brand-green),var(--color-gray-900),var(--color-gray-900))] bg-size-[200%_auto] animate-shine "
+                >
+                    Our Process: From Vision to Reality
+                </span>
+            </h1>
           <p className="text-slate-600 max-w-xl mx-auto">
             At TekUnik, we bridge the gap between complex tech and everyday simplicity.
           </p>

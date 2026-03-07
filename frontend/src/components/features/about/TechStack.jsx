@@ -20,12 +20,13 @@ export default function TechStack() {
     return (
         <div>
             <div className="text-center max-w-3xl mx-auto py-12">
-                <p className="text-brand-green font-semibold tracking-wide uppercase text-sm mb-3">
-                    Technologies
-                </p>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+                <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pb-1">
+                <span
+                    className="bg-clip-text text-transparent bg-[linear-gradient(to_right,var(--color-gray-900),var(--color-gray-900),var(--color-brand-green),var(--color-gray-900),var(--color-gray-900))] bg-size-[200%_auto] animate-shine "
+                >
                     Our Tech Stack
-                </h2>
+                </span>
+            </h1>
                 <p className="text-gray-600 mt-4 text-lg">
                     We use modern technologies to build fast, secure, and scalable products.
                 </p>

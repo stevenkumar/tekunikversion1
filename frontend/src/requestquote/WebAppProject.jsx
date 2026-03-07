@@ -102,7 +102,7 @@ export default function AppProject() {
         {/* Progress Header */}
         <div className="bg-brand-green p-8 text-white">
           <div className="flex justify-between items-center mb-4">
-            <h1 className="text-2xl font-black tracking-tight uppercase">Web Project Intake</h1>
+            <h1 className="text-2xl font-black tracking-tight uppercase">Web Application Project Intake</h1>
             <span className="bg-brand-green/60 px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap">Step {step} of {TOTAL_STEPS}</span>
           </div>
           <p className="text-white/80 my-3 text-sm uppercase font-bold tracking-widest">
